@@ -130,20 +130,7 @@ The SQL script `ecommerce_schema.sql` contains:
 
 * Combination of multiple columns to form a unique identifier.
 
-## Submission Instructions
-
-1. Upload the following files to your GitHub repository:
-
-   * `ecommerce_schema.sql`
-   * `ER_diagram.png`
-   * `README.md`
-2. Add a short project description and screenshots (optional).
-3. Submit your GitHub repository link using the given Google Form.
-
----
-
 ## Author
 
 **Shefali Deshpande**
-SQL Developer Intern
-*Task 1: Database Setup and Schema Design*
+
