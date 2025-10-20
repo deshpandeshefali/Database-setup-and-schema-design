@@ -6,8 +6,8 @@ This project is part of the **SQL Developer Internship - Task 1: Database Setup 
 
 ## Tools Used
 
-* **MySQL Workbench / SQLiteStudio / pgAdmin**
-* **dbdiagram.io** or **draw.io** (for ER Diagram)
+* **MySQL Workbench**
+* **draw.io** (for ER Diagram)
 
 ## Database Name
 
