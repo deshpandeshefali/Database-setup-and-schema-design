@@ -19,7 +19,7 @@ This project is part of the **SQL Developer Internship - Task 1: Database Setup 
 
 | Column      | Type                     | Description        |
 | ----------- | ------------------------ | ------------------ |
-| Customer_ID | INT (PK, AUTO_INCREMENT) | Unique customer ID |
+| Customer_ID | INT                      | Unique customer ID |
 | Name        | VARCHAR(100)             | Customer's name    |
 | Email       | VARCHAR(100, UNIQUE)     | Email address      |
 | Phone       | VARCHAR(15)              | Contact number     |
@@ -29,47 +29,47 @@ This project is part of the **SQL Developer Internship - Task 1: Database Setup 
 
 | Column        | Type                     | Description                              |
 | ------------- | ------------------------ | ---------------------------------------- |
-| Category_ID   | INT (PK, AUTO_INCREMENT) | Unique category ID                       |
+| Category_ID   | INT                      | Unique category ID                       |
 | Category_Name | VARCHAR(100)             | Category name (e.g., Electronics, Books) |
 
 ### 3. **Products**
 
 | Column       | Type                     | Description               |
 | ------------ | ------------------------ | ------------------------- |
-| Product_ID   | INT (PK, AUTO_INCREMENT) | Unique product ID         |
+| Product_ID   | INT                      | Unique product ID         |
 | Product_Name | VARCHAR(100)             | Product name              |
 | Price        | DECIMAL(10,2)            | Price of the product      |
 | Stock        | INT                      | Available quantity        |
-| Category_ID  | INT (FK)                 | References Category table |
+| Category_ID  | INT                      | References Category table |
 
 ### 4. **Orders**
 
 | Column       | Type                     | Description               |
 | ------------ | ------------------------ | ------------------------- |
-| Order_ID     | INT (PK, AUTO_INCREMENT) | Unique order ID           |
-| Customer_ID  | INT (FK)                 | References Customer table |
+| Order_ID     | INT                      | Unique order ID           |
+| Customer_ID  | INT                      | References Customer table |
 | Order_Date   | DATE                     | Date of order             |
-| Total_Amount | DECIMAL(10,2)            | Total bill amount         |
+| Total_Amount | DECIMAL                  | Total bill amount         |
 
 ### 5. **Order_Details**
 
 | Column         | Type                     | Description               |
 | -------------- | ------------------------ | ------------------------- |
-| OrderDetail_ID | INT (PK, AUTO_INCREMENT) | Unique order detail ID    |
-| Order_ID       | INT (FK)                 | References Orders table   |
-| Product_ID     | INT (FK)                 | References Products table |
+| OrderDetail_ID | INT                      | Unique order detail ID    |
+| Order_ID       | INT                      | References Orders table   |
+| Product_ID     | INT                      | References Products table |
 | Quantity       | INT                      | Quantity ordered          |
-| Subtotal       | DECIMAL(10,2)            | Product subtotal amount   |
+| Subtotal       | DECIMAL                  | Product subtotal amount   |
 
 ### 6. **Payments**
 
 | Column       | Type                     | Description                            |
 | ------------ | ------------------------ | -------------------------------------- |
-| Payment_ID   | INT (PK, AUTO_INCREMENT) | Unique payment ID                      |
-| Order_ID     | INT (FK)                 | References Orders table                |
+| Payment_ID   | INT                      | Unique payment ID                      |
+| Order_ID     | INT                      | References Orders table                |
 | Payment_Date | DATE                     | Date of payment                        |
 | Payment_Mode | VARCHAR(50)              | Mode of payment (Card, UPI, COD, etc.) |
-| Amount       | DECIMAL(10,2)            | Payment amount                         |
+| Amount       | DECIMAL                  | Payment amount                         |
 
 
 ## SQL Schema Script
