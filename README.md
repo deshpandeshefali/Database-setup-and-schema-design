@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is part of the **SQL Developer Internship - Task 1: Database Setup and Schema Design**. The goal is to create a structured relational database for an **E-Commerce Platform**, showcasing how to design tables, define relationships, and normalize data for efficient storage and retrieval.
+This task is part of the **SQL Developer Internship - Task 1: Database Setup and Schema Design**. The goal is to create a structured relational database for an **E-Commerce Platform**, showcasing how to design tables, define relationships, and normalize data for efficient storage and retrieval.
 
 ## Tools Used
 
